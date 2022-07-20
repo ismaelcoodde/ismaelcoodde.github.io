@@ -52,3 +52,13 @@
     font-size: 0.9;
     font-family: sans-serif;
 }
+
+.imgisla{
+    width: 100px;
+    height: 100px;
+}
+
+.servicio-fila{
+    width: 100% !important;
+    text-align: center;
+}
