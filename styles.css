@@ -53,12 +53,15 @@
     font-family: sans-serif;
 }
 
-.imgisla{
-    width: 100px;
-    height: 100px;
+@media (max-width:768px){
+    .servicio-fila{
+        width: 100%!important;
+        text-align: center;
+    }
 }
-
-.servicio-fila{
-    width: 100% !important;
-    text-align: center;
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center!important;
+    }
 }
