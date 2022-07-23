@@ -18,7 +18,7 @@
 /*Hero*/
 
 .banner{
-    background: url("img/rilo.JPG")fixed center/cover;
+    background: url("img/rilo.JPG") center/cover;
     height: 500px;
     position: relative;
     display: flex;
