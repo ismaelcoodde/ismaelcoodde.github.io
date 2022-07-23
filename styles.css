@@ -51,6 +51,7 @@
     line-height: 2 ;
     font-size: 0.9;
     font-family: sans-serif;
+    margin-top: 40px;
 }
 
 @media (max-width:768px){
@@ -65,4 +66,8 @@
         justify-content: center!important;
     }
 }
- 
+ .list{
+    
+    margin-right: 15px;
+   
+ }
