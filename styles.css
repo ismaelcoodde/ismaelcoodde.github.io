@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    height: 90px;
+    padding: 0 5vh;
+    color: white;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "logo icono";
+    justify-content: space-between;
+    grid-template-columns: max-content max-content;
+}
+.nav__open, .nav__close{
+    grid-area: icono;
+    cursor: pointer;
+    transition: opacity .5s;
+    z-index: 200;
+}
+.nav__close{
+    opacity: 0;
+}
+.check{
+    display: none;
+}
+.check:checked~.nav__open{
+    opacity: 0;
+}
+.check:checked~.nav__close{
+    opacity: 1;
+}
+.check:checked~.nav__menu{
+    opacity: 1;
+    pointer-events: unset;
+}
+.nav__menu{
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    right: 0;
+    top: 0;
+    bottom: 50;
+    width: 100%;
+    padding: 100px 5vh;
+    list-style: none;
+    display: grid;
+    place-content: center;
+    gap: 3rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
+
+}
+.nav__list a{
+    color: white;
+    text-decoration: none;
+}
